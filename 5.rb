@@ -6,3 +6,16 @@
 #   puts number  
 # end
 
+answer = 20 #starting at the lowest possible number
+remainder = 1
+
+#logic
+while remainder != 0
+  remainder = 0
+  puts "\n\n\t\t\ttest number: #{answer} ================="
+  (3..10).each do |num|
+    remainder += answer % num
+    puts "num: #{num}, remainder: #{answer % num}"
+  end
+  answer += 1
+end
